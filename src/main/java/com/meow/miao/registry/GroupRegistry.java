@@ -15,7 +15,7 @@ public class GroupRegistry {
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> ItemRegistry.Miao_Item.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ItemRegistry.Miao_Item.get());
-                output.accept(BlockItemRegistry.Miao_Block_Item.get());
+                output.accept(ItemRegistry.Miao_Item);
+                output.accept(ItemRegistry.Miao_Block_Item);
             }).build());
 }
